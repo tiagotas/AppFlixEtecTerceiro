@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFlixEtecTerceiro.Filmes.PanteraNegra"
+             Title="Assistir Pante Negra"
+             BackgroundColor="#2f2f30">
+    
+    <ContentPage.Content>    
+        
+        <StackLayout Spacing="0">
+
+            <!-- Trailer -->
+            <StackLayout HeightRequest="500">
+                <WebView x:Name="trailer" 
+                         VerticalOptions="FillAndExpand" 
+                         HorizontalOptions="FillAndExpand"
+                         BackgroundColor="Aqua"/>
+            </StackLayout>
+
+            <!-- Dados do Filme -->
+            <StackLayout VerticalOptions="FillAndExpand" Padding="0, 10, 0, 0">
+                <ScrollView>
+                    <Grid>
+                        
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Image x:Name="poster" Grid.Column="0" Grid.Row="0" />
+
+                        <StackLayout Grid.Column="1" Grid.Row="0">
+                            <Label Text="Titulo" Style="{StaticResource Titulo}" />
+                            <Label Text="Pantera Negra" />
+
+                            <Label Text="Data de Lançamento" Style="{StaticResource Titulo}" />
+                            <Label Text="15 de Fevereiro de 2018" />
+                    
+                            <Label Text="Direção" Style="{StaticResource Titulo}" />
+                            <Label Text="Ryan Coogler" />
+
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                            <Label Text="Sinopse" Style="{StaticResource Titulo}" />
+                            <Label x:Name="lbl_sipnopse" />
+                        </StackLayout>
+                    </Grid>
+                </ScrollView>                
+            </StackLayout>           
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -39,5 +39,19 @@ namespace AppFlixEtecTerceiro.Categorias
             }
 
         }
+
+        private void btnPanteraNegra_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new Filmes.PanteraNegra());
+
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Ops", ex.Message, "OK :( ");
+            }
+
+        }
     }
 }

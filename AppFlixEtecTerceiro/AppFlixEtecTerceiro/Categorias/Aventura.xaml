@@ -25,7 +25,7 @@
                     </Grid.RowDefinitions>
 
                     <ImageButton x:Name="btnCapitaMarvel" Grid.Row="0" Grid.Column="0" Clicked="ImageButton_Clicked" />
-                    <ImageButton x:Name="btnPanteraNegra" Grid.Row="0" Grid.Column="1" />
+                    <ImageButton x:Name="btnPanteraNegra" Grid.Row="0" Grid.Column="1" Clicked="btnPanteraNegra_Clicked" />
                     <ImageButton x:Name="btnShazan" Grid.Row="1" Grid.Column="0" />
                     <ImageButton x:Name="btnAlladin" Grid.Row="1" Grid.Column="1" />
                     <ImageButton x:Name="btnDumbo" Grid.Row="2" Grid.Column="0" />

@@ -28,6 +28,22 @@
                 <Setter Property="HeightRequest" Value="85" />
             </Style>
 
+            <Style x:Key="Titulo" TargetType="Label">
+                <Setter Property="TextColor" Value="#e80000" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <!--  left, top, right, bottom    9  12 15  18          -->
+                <Setter Property="Padding" Value="0, 25, 0, 0" />
+                <Setter Property="TextTransform" Value="Uppercase" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+            
+            
+
         </ResourceDictionary>
 
     </Application.Resources>

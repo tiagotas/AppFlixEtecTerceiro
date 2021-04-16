@@ -9,7 +9,6 @@
         
         <StackLayout>
 
-
             <Grid>
 
                 <Grid.ColumnDefinitions>
@@ -23,7 +22,7 @@
 
                 <WebView Grid.Row="0" Grid.Column="0" x:Name="video_trailer" />
 
-                <StackLayout Grid.Row="1" Grid.Column="0">
+                <StackLayout Grid.Row="1" Grid.Column="0" Padding="10">
                     <ScrollView>
                         
                         <Grid>
@@ -40,11 +39,20 @@
                             <Image x:Name="poster" Grid.Row="0" Grid.Column="0" />
 
                             <StackLayout Grid.Row="0" Grid.Column="1">
-                                <!-- Dados do filme... -->
+                                <Label Text="Título" Style="{StaticResource Titulo}"/>
+                                <Label Text="Capitã Marvel"/>
+
+                                <Label Text="Data de Lançamento" Style="{StaticResource Titulo}"/>
+                                <Label Text="7 de Março de 2019"/>
+
+                                <Label Text="Direção" Style="{StaticResource Titulo}"/>
+                                <Label Text="Anna Boden, Ryan Fleck"/>
+
                             </StackLayout>
 
-                            <StackLayout Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
-                                <!-- Sinopse... -->
+                            <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                                <Label Text="Sinopse" Style="{StaticResource Titulo}" />
+                                <Label x:Name="lbl_snopse" />
                             </StackLayout>
 
                         </Grid>
